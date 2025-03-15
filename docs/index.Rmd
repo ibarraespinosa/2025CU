@@ -369,7 +369,9 @@ class: center middle
 ---
 class: center middle
 
-<img src="figuras/vein_ceds_edgar_cams_NMHC_proj.png" alt="drawing" height="350"/>
+# NMHC and projections
+
+<img src="figuras/vein_ceds_edgar_cams_NMHC_evap.png" alt="drawing" />
 
 
 
