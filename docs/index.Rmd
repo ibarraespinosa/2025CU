@@ -256,7 +256,7 @@ class: inverse center middle
 
 <image src="https://atmoschem.github.io/eixport/reference/figures/logo.gif" height="100">
 
-<image src="file:///media/sergio/ext5/papers/vein_musica/2025CU/docs/figuras/logo.png" height="100">
+<image src="figuras/logo.png" height="100">
 
 <img src="https://user-images.githubusercontent.com/520851/34887433-ce1d130e-f7c6-11e7-83fc-d60ad4fae6bd.gif" height="100"/>
 
@@ -284,7 +284,7 @@ library(vein)
 
 .pull-right[
 
-<image src="file:///media/sergio/ext5/papers/vein_musica/2025CU/docs/figuras/vein_projects.jpg" height="500">
+<image src="figuras/vein_projects.jpg" height="500">
 
 
 ]
@@ -310,7 +310,7 @@ library(vein)
 
 .pull-right[
 
-<image src="file:///media/sergio/ext5/papers/vein_musica/2025CU/docs/figuras/grids/grids.gif" height="400">
+<image src="figuras/grids/grids.gif" height="400">
 
 ]
 
