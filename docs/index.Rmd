@@ -369,10 +369,133 @@ class: center middle
 ---
 class: center middle
 
-# NMHC and projections
 
 <img src="figuras/vein_ceds_edgar_cams_NMHC_evap.png" alt="drawing" />
 
+
+---
+class: center middle
+
+<img src="figuras/vein_ceds_edgar_cams_evap_proj_region.png" alt="drawing" />
+
+---
+class: inverse center middle
+# Is there a positive feedback with evaporative emissions?
+
+
+---
+# hockey-type curve
+
+
+- Based on last figures, it seems that there is indeed a positive ffedback
+- The hotter the air, the more evaporative emissions, hence more global warming
+- To investigate the breakpoints, we used Regression Model with Segmented Relationship(s)
+- We used the R package segmented 
+- Fasola S, Muggeo VMR, Kuchenhoff K. (2018). A heuristic, iterative
+  algorithm for change-point detection in abrupt change models.
+  Computational Statistics, 33, 997-1015.
+
+
+
+---
+class: center middle
+
+<img src="figuras/vein_ceds_edgar_cams_hockey_brazil.png" alt="drawing" />
+
+
+---
+class: center middle
+
+<img src="figuras/vein_ceds_edgar_cams_hockey_region.png" alt="drawing" />
+
+
+
+
+
+---
+class: inverse center middle
+# Some advances using MUSICA
+
+---
+## MUSICA run over South America
+
+```{r, echo = F, fig.align='center',  out.width='93%'}
+knitr::include_graphics("figuras/o3mus5.png")
+```
+
+
+
+---
+
+## Time series
+
+
+```{r, echo = F, fig.align='center',  out.width='93%'}
+knitr::include_graphics("musser.png")
+```
+
+---
+## 2014-08-18
+
+.pull-left[
+```{r, echo = F, fig.align='center',  out.width='93%'}
+knitr::include_graphics("sao3.png")
+```
+
+]
+
+.pull-right[
+
+```{r, echo = F, fig.align='center',  out.width='93%'}
+knitr::include_graphics("sapm.png")
+```
+
+]
+
+---
+## VEIN Emissions
+
+.pull-left[
+
+<img src="veinco.png" alt="drawing" height="550"/>
+
+]
+
+.pull-right[
+
+<img src="veinno.png" alt="drawing" height="550"/>
+
+]
+
+
+---
+## Speciation
+
+.pull-left[
+
+<img src="veinhc.png" alt="drawing" height="550"/>
+
+]
+
+.pull-right[
+```{r, eval = F, fig.align='center',  out.height='83%'}
+dx <- speciate(x = x, spec = "nmhc",
+               fuel = "G", veh = "LDV", eu = "II")
+unique(dx$pol) # g/km2
+# ethane propane butane isobutane... 
+```
+
+mech options: "CB4", "CB05", "S99", "S7","CS7", "S7T", "S11", "S11D","S16C","S18B","RADM2", "RACM2","MOZT1", "CBMZ", "CB05opt2"
+
+```{r, eval = F, fig.align='center',  out.width='93%'}
+vocE25EX <- emis_chem2(df = dx, mech = "MOZT1")
+unique(dx$group) # mol/km2
+# BENZENE BIGALK BIGENE BZALD C2H2 C2H4
+# C2H6  C3H6 C3H8 CH2O CH3CHO CH3COCH3
+# MACR MEK TOLUENE XYLENES 
+```
+
+]
 
 
 
@@ -560,114 +683,6 @@ mapview::mapview(l8,
                                                     legend = FALSE)
 ```
 
----
-class: inverse center middle
-# Some advances using MUSICA
-
----
-## MUSICA run over South America
-
-```{r, echo = F, fig.align='center',  out.width='93%'}
-knitr::include_graphics("figuras/o3mus5.png")
-```
-
-
----
-
-## Geometry
-
-- The idea is to re-construct geometry from the NetCDF file.
-- Generate Well Known Text POLYGON, example:
-
-```{r, eval=F}
-POLYGON ((274.6966 -59.03607, 274.8997 -59.00577, 274.9453 -58.88916, 274.7924 -58.79595, 274.5942 -58.8158, 274.5485 -58.93235, 274.5485 -58.93235, 274.5485 -58.93235, 274.5485 -58.93235, 274.5485 -58.93235, 274.6966 -59.03607))
-
-```
-
-Corner Coordinates:
-
-```{r, eval=F}
-nc <- nc_open("/glade/p/cgd/amp/patc/GRID_REPO/ne0np4.SAMwrf01.ne30x2/grids/SAMwrf01_ne30x2_np4_SCRIP.nc")
-lat <- ncdf4::ncvar_get(nc, "grid_corner_lat")
-lat <- rbind(lat, lat[1, i])
-
-lon <- ncdf4::ncvar_get(nc, "grid_corner_lon")
-lon <- rbind(lon, lon[1, i])
-geo <- sf::st_polygon(list(cbind(lon, lat)))
-
-```
-
----
-
-## Time series
-
-
-```{r, echo = F, fig.align='center',  out.width='93%'}
-knitr::include_graphics("musser.png")
-```
-
----
-## 2014-08-18
-
-.pull-left[
-```{r, echo = F, fig.align='center',  out.width='93%'}
-knitr::include_graphics("sao3.png")
-```
-
-]
-
-.pull-right[
-
-```{r, echo = F, fig.align='center',  out.width='93%'}
-knitr::include_graphics("sapm.png")
-```
-
-]
-
----
-## VEIN Emissions
-
-.pull-left[
-
-<img src="veinco.png" alt="drawing" height="550"/>
-
-]
-
-.pull-right[
-
-<img src="veinno.png" alt="drawing" height="550"/>
-
-]
-
-
----
-## Speciation
-
-.pull-left[
-
-<img src="veinhc.png" alt="drawing" height="550"/>
-
-]
-
-.pull-right[
-```{r, eval = F, fig.align='center',  out.height='83%'}
-dx <- speciate(x = x, spec = "nmhc",
-               fuel = "G", veh = "LDV", eu = "II")
-unique(dx$pol) # g/km2
-# ethane propane butane isobutane... 
-```
-
-mech options: "CB4", "CB05", "S99", "S7","CS7", "S7T", "S11", "S11D","S16C","S18B","RADM2", "RACM2","MOZT1", "CBMZ", "CB05opt2"
-
-```{r, eval = F, fig.align='center',  out.width='93%'}
-vocE25EX <- emis_chem2(df = dx, mech = "MOZT1")
-unique(dx$group) # mol/km2
-# BENZENE BIGALK BIGENE BZALD C2H2 C2H4
-# C2H6  C3H6 C3H8 CH2O CH3CHO CH3COCH3
-# MACR MEK TOLUENE XYLENES 
-```
-
-]
 
 ---
 class invser center middle
