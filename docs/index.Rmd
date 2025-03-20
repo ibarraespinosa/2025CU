@@ -63,7 +63,7 @@ University of Colorado-Boulder
 
 
 <img src="https://atmoschem.github.io/vein/reference/figures/logo.png" alt="drawing" height="100"/>
-<img src="figuras/logo.png" alt="drawing" height="100"/>
+<img src="https://github.com/atmoschem/respeciate/blob/main/man/figures/logo.png?raw=true" alt="drawing" height="100"/>
 <img src="https://atmoschem.github.io/eixport/reference/figures/logo.gif" alt="drawing" height="100"/>
 <img src="https://www2.acom.ucar.edu/sites/default/files/styles/extra_large/public/images/MUSICAlogo_0.png" alt="drawing" height="100"/>
 <img src="https://avatars.githubusercontent.com/u/12666893?s=200&v=4" alt="drawing" height="100"/>
@@ -84,7 +84,7 @@ Pulles, Tim, and Dick Heslinga. "The art of emission inventorying." TNO, Utrech
 
 ## Global inventories
 
-- Crippa et al., 2024) Emissions Database for Global Atmospheric Research (EDGAR) 1970-2023
+- Crippa et al., (2024) Emissions Database for Global Atmospheric Research (EDGAR) 1970-2023
 - Feng at al., (2020) Community Emissions Data System (CEDS)
 - Soulie et al., (2024) CAMS inventory 2000-2025
 
@@ -110,11 +110,11 @@ Pulles, Tim, and Dick Heslinga. "The art of emission inventorying." TNO, Utrech
 .pull-left[
 ## Roads and cars
 
-Brazil has the biggest fleet in Latin America, with big problems in air pollution and congestion.
-In 1930s, President Getúlio Vargas initiated large-scale road projects, including the construction of the "Via Dutra" (Dutra Highway), which connected Rio de  Janeiro to São Paulo. This period also saw the introduction of bus services and the expansion of road networks.
-In 1050, President Kubitschek' Large-scale road construction began, aiming to attract the automotive industry.
-Volkswagen, Ford and General Motors arrived in Brasil .
-Today, fleet more than 200 million.
+- Brazil has the biggest fleet in Latin America, with big problems in air pollution and congestion.
+- In 1930s, President Getúlio Vargas initiated first large road projects, including the construction of the "Via Dutra" (Dutra Highway), which connected Rio de  Janeiro to São Paulo. 
+- In 1950, President Kubitschek' Large-scale road construction began, aiming to attract the automotive industry.
+- Volkswagen, Ford and General Motors arrived in Brasil .
+- Today, fleet more than 200 million.
 
 
 ]
@@ -137,10 +137,10 @@ Today, fleet more than 200 million.
 .pull-left[
 ## Fuel
 
-- Gasoline contains 27% of ethanol and diesel 7% of biodiesel (CETESB, 2020).
+- Gasoline contains 27% of ethanol.
 - Diesel has 7% biodiesel
 - In 2003, flex engine emerged, allowing any mix of gasoline or ethanol
-- Ethanol is cheaper, but a bit lower economy
+- Ethanol is cheaper, but a bit less miles per gallon 
 - In 2009, flex engines where incorporated into motorcycles
 - Today, 76% of the fleet are flex vehicles
 
@@ -154,10 +154,9 @@ Today, fleet more than 200 million.
 - LCV vehicles also consume diesel
 - Trucks consume diesel
 - Buses consume mostly diesel
-- Small participation:
--- Electric vehicles (light and buses), hydrogen, Compressed natural gas (mostly in Rio de Janeiro)
+- Small participation: electric cars
 - **Electric vehicles are less environmentally friendly than flex-fuel cars considering a broader analysis (de Oliveira et al., 2020)**.
-
+- https://www.epa.gov/greenvehicles/electric-vehicle-myths
 ]
 
 
@@ -169,7 +168,7 @@ Today, fleet more than 200 million.
 - Estimate vehicular emission in Brazil, 1960-2100
 - Evaluate impact of Shared Socioeconomic Pathways on evaporative emissions
 - Evaluate impacts on air quality during 2019
-
+- Compare with Lichtig et al. (2024)
 
 ---
 class: inverse center middle
@@ -196,7 +195,7 @@ class: inverse center middle
 
 ---
 
-# Fleet and fuel
+# Fleet and fuel in 2020
 
 .pull-left[
 <img src="figuras/initial_fleet_sp.png" alt="fleet sp" height="500"/>
@@ -207,15 +206,9 @@ class: inverse center middle
 
 ]
 
----
-# Vehicular Emissions INVentory (vein)
-
-![](https://atmoschem.github.io/all.gif)
-
-
 
 ---
-# vein
+# Vehicular Emissions INventories  vein
 
 .pull-left[
 
@@ -244,7 +237,7 @@ class: inverse center middle
 - 64 citations [(2018)](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1650173053278606175)
 - Detailed speciation applying Carter [(2015)](https://www.tandfonline.com/doi/full/10.1080/10962247.2015.1013646)
 - YouTube Channel https://www.youtube.com/channel/UC2oYaS9mpnIDk8w55O8_bTg
-
+- Emission factors based on real world measurements
  ]
 
 
@@ -256,7 +249,7 @@ class: inverse center middle
 
 <image src="https://atmoschem.github.io/eixport/reference/figures/logo.gif" height="100">
 
-<image src="figuras/logo.png" height="100">
+<image src="https://github.com/atmoschem/respeciate/blob/main/man/figures/logo.png?raw=true" height="100">
 
 <img src="https://user-images.githubusercontent.com/520851/34887433-ce1d130e-f7c6-11e7-83fc-d60ad4fae6bd.gif" height="100"/>
 
@@ -337,10 +330,10 @@ knitr::include_graphics("figuras/o3mus5.png")
 ]
 
 .pull-right[
-## Cenarios
+## Scenarios
 
-1. MUSICA 2018 and 2019 wirh default emissions
-2. MUSICA 2018 and 2019 with transprotation from VEIN in Brazil and other elswhere
+1. MUSICA 2018 and 2019 with default emissions
+2. MUSICA 2018 and 2019 with transportation from VEIN in Brazil and other elsewhere
 
 ]
 
@@ -370,13 +363,8 @@ class: center middle
 class: center middle
 
 
-<img src="figuras/vein_ceds_edgar_cams_NMHC_evap.png" alt="drawing" />
+<img src="figuras/vein_ceds_edgar_cams_NMHC.png" alt="drawing" />
 
-
----
-class: center middle
-
-<img src="figuras/vein_ceds_edgar_cams_evap_proj_region.png" alt="drawing" />
 
 ---
 class: inverse center middle
@@ -387,7 +375,7 @@ class: inverse center middle
 # hockey-type curve
 
 
-- Based on last figures, it seems that there is indeed a positive ffedback
+- Based on last figures, it seems that there is indeed a positive feedback
 - The hotter the air, the more evaporative emissions, hence more global warming
 - To investigate the breakpoints, we used Regression Model with Segmented Relationship(s)
 - We used the R package segmented 
@@ -411,6 +399,64 @@ class: center middle
 
 
 
+---
+class: inverse center middle
+# Maps VEIN CAMS
+
+---
+class: center middle
+#CO
+.pull-left[
+
+<img src="figuras/vein_cams_co.png" alt="drawing" />
+]
+
+.pull-right[
+<img src="figuras/vein_cams_co_dif.png" alt="drawing" height="500"/>
+]
+
+
+---
+class: center middle
+#NOx
+.pull-left[
+
+<img src="figuras/vein_cams_nox.png" alt="drawing" />
+]
+
+.pull-right[
+<img src="figuras/vein_cams_nox_dif.png" alt="drawing" height="500"/>
+]
+
+
+---
+class: center middle
+#alcohols
+.pull-left[
+
+<img src="figuras/vein_cams_alcohols.png" alt="drawing" />
+]
+
+.pull-right[
+<img src="figuras/vein_cams_alcohols_dif.png" alt="drawing" height="500"/>
+]
+
+
+
+
+---
+class: center middle
+#acetylene
+.pull-left[
+
+<img src="figuras/vein_cams_acetylene.png" alt="drawing" />
+]
+
+.pull-right[
+<img src="figuras/vein_cams_acetylene_dif.png" alt="drawing" height="500"/>
+]
+
+
 
 ---
 class: inverse center middle
@@ -424,131 +470,25 @@ knitr::include_graphics("figuras/o3mus5.png")
 ```
 
 
-
----
-
-## Time series
-
-
-```{r, echo = F, fig.align='center',  out.width='93%'}
-knitr::include_graphics("musser.png")
-```
-
----
-## 2014-08-18
-
-.pull-left[
-```{r, echo = F, fig.align='center',  out.width='93%'}
-knitr::include_graphics("sao3.png")
-```
-
-]
-
-.pull-right[
-
-```{r, echo = F, fig.align='center',  out.width='93%'}
-knitr::include_graphics("sapm.png")
-```
-
-]
-
----
-## VEIN Emissions
-
-.pull-left[
-
-<img src="veinco.png" alt="drawing" height="550"/>
-
-]
-
-.pull-right[
-
-<img src="veinno.png" alt="drawing" height="550"/>
-
-]
-
-
----
-## Speciation
-
-.pull-left[
-
-<img src="veinhc.png" alt="drawing" height="550"/>
-
-]
-
-.pull-right[
-```{r, eval = F, fig.align='center',  out.height='83%'}
-dx <- speciate(x = x, spec = "nmhc",
-               fuel = "G", veh = "LDV", eu = "II")
-unique(dx$pol) # g/km2
-# ethane propane butane isobutane... 
-```
-
-mech options: "CB4", "CB05", "S99", "S7","CS7", "S7T", "S11", "S11D","S16C","S18B","RADM2", "RACM2","MOZT1", "CBMZ", "CB05opt2"
-
-```{r, eval = F, fig.align='center',  out.width='93%'}
-vocE25EX <- emis_chem2(df = dx, mech = "MOZT1")
-unique(dx$group) # mol/km2
-# BENZENE BIGALK BIGENE BZALD C2H2 C2H4
-# C2H6  C3H6 C3H8 CH2O CH3CHO CH3COCH3
-# MACR MEK TOLUENE XYLENES 
-```
-
-]
-
-
-
 ---
 class: inverse center middle
-# Some applications
-
----
-class: center middle
-## Formaldehyde: 0.059 Mt/y
-
-<img src="figuras/PM25.png" alt="drawing" height="550"/>
-
----
-class: center middle
-## NP 50 nm: 1.58E+26 /y
-
-<img src="figuras/N_50nm_urban.png" alt="drawing" height="550"/>
-
----
-class: center middle
-## NorthEast China
-<img src="figuras/fig7.png" alt="drawing" height="550"/>
-
----
-
-## Applications: Sao Paulo
+# Gracias!
 
 .pull-left[
-```{r, message = F, fig.align='center',  out.height='110%'}
-library(sf)
-library(vein)
-x <- readRDS("rds/CO.rds")
-g <- st_sf(
-  geometry = st_make_grid(
-    x = x,
-    cellsize = 3000, 
-    square = F))
-co <- emis_grid(spobj = x,
-                g = g)
-```
+- https://ibarraespinosa.github.io/2025CU
+- https://ibarraespinosa.github.io/
+- sergio.ibarraespinosa@colorado.edu
+- https://scholar.google.com.br/citations?user=8ohZGHEAAAAJ
+- https://github.com/ibarraespinosa
+- https://www.researchgate.net/profile/Sergio_Ibarra-Espinosa
+- https://orcid.org/0000-0002-3162-1905
 
 ]
-
 
 .pull-right[
-
-```{r, message = F, fig.align='center',  fig.height=6, fig.width=8}
-plot(co[as.numeric(co$V9) > 0, "V9"],
-     axes = T, lty = 0)
-
-```
+<img src="figuras/qr.png" alt="drawing" height="400"/>
 ]
+
 
 ---
 class: center
@@ -684,16 +624,5 @@ mapview::mapview(l8,
 ```
 
 
----
-class invser center middle
-# Gracias!
-
-- https://ibarraespinosa.github.io/2022NCARv2s
-- https://ibarraespinosa.github.io/
-- sergio.ibarra-espinosa@noaa.gov
-- https://scholar.google.com.br/citations?user=8ohZGHEAAAAJ
-- https://github.com/ibarraespinosa
-- https://www.researchgate.net/profile/Sergio_Ibarra-Espinosa
-- https://orcid.org/0000-0002-3162-1905
 
 
