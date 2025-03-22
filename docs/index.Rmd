@@ -2,8 +2,7 @@
 title: "Unveiling the Impacts of Brazil's Unique Fuel Mix on Air Quality: A Century of Vehicular Emissions"
 author: 
   - "Sergio Ibarra-Espinosa¹ ²"
-  - "1 CIRES, University of Colorado-Boulder"
-  - "2 NOAA Global Monitoring Laboratory"
+  - "CIRES, University of Colorado-Boulder"
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
@@ -52,8 +51,7 @@ class: inverse center middle
 
 > Sergio Ibarra-Espinosa¹'²
 <br>
-> 1 CIRES, University of Colorado-Boulder<br>
-> 2 NOAA Global Monitoring Laboratory<br>
+> CIRES, University of Colorado-Boulder<br>
 > sergio.ibarraespinosa@colorado.edu<br>
 
 > Collaboratory for Air Quality Research (CAQR)
